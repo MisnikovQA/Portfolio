@@ -68,6 +68,22 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Стили для ссылок, чтобы они выглядели как кнопки */
+a.button-link {
+    display: inline-block; /* Делает ссылку блочной */
+    padding: 10px 20px; /* Внутренний отступ для кнопки */
+    background-color: #35424a; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста */
+    text-decoration: none; /* Убирает подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    margin-top: 10px; /* Добавляет отступ сверху */
+}
+
+a.button-link:hover {
+    background-color: #2a3a42; /* Цвет кнопки при наведении */
+}
+
 form {
     display: flex;
     flex-direction: column;
