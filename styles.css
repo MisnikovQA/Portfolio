@@ -33,7 +33,8 @@ h2 {
 }
 
 .project img {
-    width: 100%; /* Устанавливает изображениям ширину в 100% от контейнера */
+    max-width: 100%; /* Ограничиваем ширину до размера контейнера */
+    height: auto; /* Сохраняем пропорции */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #fff; /* Белый фон для изображений */
     border: 1px solid #ddd; /* Легкая рамка для четкости */
