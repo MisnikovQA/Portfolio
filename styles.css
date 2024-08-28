@@ -50,38 +50,25 @@ h2 {
 }
 
 .project {
+    display: flex;
+    align-items: center;
+    padding: 15px;
     margin-bottom: 15px;
-    overflow: hidden; /* Убирает выход за границы при увеличении */
+    background-color: #35424a;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Эффект при наведении на всю кнопку */
 }
 
 .project img {
-    max-width: 100%; /* Ограничиваем ширину до размера контейнера */
-    height: auto; /* Сохраняем пропорции */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; /* Белый фон для изображений */
-    border: 1px solid #ddd; /* Легкая рамка для четкости */
+    max-width: 80px; /* Ограничиваем ширину изображения */
+    margin-right: 15px; /* Отступ справа для картинки */
     border-radius: 4px; /* Слегка закругленные углы */
 }
 
-.project:hover img {
+.project:hover {
     transform: scale(1.05); /* Эффект увеличения при наведении */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Стили для ссылок, чтобы они выглядели как кнопки */
-a.button-link {
-    display: inline-block; /* Делает ссылку блочной */
-    padding: 10px 20px; /* Внутренний отступ для кнопки */
-    background-color: #35424a; /* Цвет фона кнопки */
-    color: #ffffff; /* Цвет текста */
-    text-decoration: none; /* Убирает подчеркивание */
-    border-radius: 5px; /* Закругленные углы */
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
-    margin-top: 10px; /* Добавляет отступ сверху */
-}
-
-a.button-link:hover {
-    background-color: #2a3a42; /* Цвет кнопки при наведении */
 }
 
 form {
@@ -148,5 +135,10 @@ footer {
     
     .project {
         text-align: center;
+        flex-direction: column;
+    }
+
+    .project img {
+        margin: 0 0 10px 0; /* Центрируем изображение и добавляем отступ снизу */
     }
 }
