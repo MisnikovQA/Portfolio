@@ -29,11 +29,19 @@ h2 {
 
 .project {
     margin-bottom: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Убирает выход за границы при увеличении */
 }
 
-.project:hover {
-    transform: scale(1.05);
+.project img {
+    width: 100%; /* Устанавливает изображениям ширину в 100% от контейнера */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Белый фон для изображений */
+    border: 1px solid #ddd; /* Легкая рамка для четкости */
+    border-radius: 4px; /* Слегка закругленные углы */
+}
+
+.project:hover img {
+    transform: scale(1.05); /* Эффект увеличения при наведении */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
