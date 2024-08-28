@@ -23,5 +23,14 @@
         <p>&copy; 2024 Andrey Misnikov</p>
         <a href="index.html">Return to Portfolio</a>
     </footer>
+
+    <!-- Подключение JavaScript должно быть внутри тега <script> -->
+    <script>
+        console.log('Script loaded'); // Это сообщение поможет увидеть, срабатывает ли скрипт
+        window.addEventListener('load', function() {
+            console.log('Adding loaded class to body');
+            document.body.classList.add('loaded');
+        });
+    </script>
 </body>
 </html>
