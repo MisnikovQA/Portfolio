@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="fade-in">
         <h1>Привет, я Andrey Misnikov!</h1>
         <p>QA инженер с опытом в тестировании и автоматизации.</p>
     </header>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>Обо мне</h2>
         <p>Краткое описание твоего опыта и навыков. Например, QA тестирование, автоматизация с Selenium, знание Python и SQL.</p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="fade-in">
         <h2>Портфолио</h2>
         <div class="project">
             <img src="urban_view.png" alt="Urban View">
@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <h2>Контакты</h2>
         <form action="https://formspree.io/f/xvgplwpn" method="POST">
             <input type="text" name="name" placeholder="Ваше имя" required>
@@ -43,13 +43,17 @@
         <p>Свяжись со мной через <a href="mailto:MisnikovQA@gmail.com">email</a> или <a href="https://linkedin.com/in/misnikovqa">LinkedIn</a>.</p>
     </section>
 
-    <footer>
+    <footer class="fade-in">
         <p>&copy; 2024 Andrey Misnikov</p>
     </footer>
 
     <button id="backToTop" onclick="scrollToTop()">Наверх</button>
 
     <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
         window.onscroll = function() {
             const backToTop = document.getElementById('backToTop');
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
