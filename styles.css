@@ -44,6 +44,20 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+a {
+    color: #ffffff; /* Устанавливаем белый цвет текста для всех ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:hover {
+    color: #d1d1d1; /* Цвет текста при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении, если нужно */
+}
+
+a:visited {
+    color: #ffffff; /* Белый цвет для посещенных ссылок */
+}
+
 h2 {
     border-bottom: 2px solid #35424a;
     padding-bottom: 10px;
