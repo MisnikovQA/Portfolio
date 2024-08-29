@@ -154,7 +154,6 @@ button:hover {
     border: none; /* Без границ */
     border-radius: 4px; /* Закругленные углы */
     text-decoration: none; /* Убираем подчеркивание */
-    text-align: center; /* Выравнивание текста */
     cursor: pointer; /* Курсор в виде руки при наведении */
     transition: background-color 0.3s ease; /* Плавный переход цвета при наведении */
 }
