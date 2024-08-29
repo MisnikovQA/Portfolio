@@ -149,8 +149,8 @@ button:hover {
 .button-link {
     display: inline-block; /* Делаем элемент блочным, чтобы он вел себя как кнопка */
     padding: 10px 20px; /* Отступы внутри кнопки */
-    background-color: #35424A; /* Цвет фона кнопки */
-    color: #ffffff; /* Цвет текста */
+    background-color: #ffffff; /* Цвет фона кнопки */
+    color: #000000; /* Цвет текста */
     border: none; /* Без границ */
     border-radius: 4px; /* Закругленные углы */
     text-decoration: none; /* Убираем подчеркивание */
@@ -160,7 +160,7 @@ button:hover {
 }
 
 .button-link:hover {
-    background-color: #2a3a42; /* Цвет кнопки при наведении */
+    background-color: #ffffff; /* Цвет кнопки при наведении */
 }
 
 footer {
