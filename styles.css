@@ -29,6 +29,8 @@ body.loaded {
 }
 
 header {
+    background: url('testing_background.png') no-repeat center center;
+    background-size: cover; /* Изменяет размер изображения для покрытия всего заголовка */
     background: #35424a; /* Параметр для общего фона */
     color: #ffffff;
     padding: 20px;
