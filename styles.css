@@ -31,7 +31,6 @@ body.loaded {
 header {
     background: url('testing_background.png') no-repeat center center;
     background-size: cover; /* Изменяет размер изображения для покрытия всего заголовка */
-    background: #35424a; /* Параметр для общего фона */
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -51,11 +50,12 @@ header::before {
 }
 
 header h1, header p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: relative; /* Чтобы текст был выше затемненного слоя */
     z-index: 2;
 }
 
-h1, p {
+h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень для улучшения читаемости */
 }
 
