@@ -29,7 +29,7 @@ body.loaded {
 }
 
 header {
-    background: url('images/testing_background.png') no-repeat center center;
+    background: url('testing_background.png') no-repeat center center;
     background-size: cover; /* Изменяет размер изображения, чтобы оно полностью покрывало заголовок */
     color: #ffffff;
     padding: 20px;
