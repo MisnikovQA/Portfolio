@@ -69,8 +69,9 @@ h2 {
     padding: 15px;
     margin-bottom: 15px;
     background-color: #ffffff;
-    color: #ffffff;
+    color: #333; /* Убедитесь, что текст контрастен */
     border-radius: 8px;
+    border: 2px solid #ccc; /* Добавляет рамку вокруг кнопки */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Эффект при наведении на всю кнопку */
 }
 
@@ -83,6 +84,7 @@ h2 {
 .project:hover {
     transform: scale(1.05); /* Эффект увеличения при наведении */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #999; /* Изменение цвета рамки при наведении */
 }
 
 form {
