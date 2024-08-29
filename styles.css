@@ -129,14 +129,16 @@ footer {
     padding: 10px 15px;
     background-color: #35424a;
     color: #ffffff;
-    border: none;
+    border: 2px solid #ffffff; /* Добавляет белую рамку */
     border-radius: 50%;
     cursor: pointer;
     display: none;
+    transition: border-color 0.3s ease;
 }
 
 #backToTop:hover {
     background-color: #2a3a42;
+    border-color: #ffffff; /* Сохраняет белую рамку при наведении */
 }
 
 @media (max-width: 768px) {
