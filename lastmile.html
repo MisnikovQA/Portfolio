@@ -21,15 +21,28 @@
 
     <footer>
         <p>&copy; 2024 Andrey Misnikov</p>
-        <a href="index.html">Return to Portfolio</a>
+        <button class="button-link" onclick="location.href='index.html';">Return to Portfolio</button>
     </footer>
 
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
     <script>
-        console.log('Script loaded'); // Это сообщение поможет увидеть, срабатывает ли скрипт
         window.addEventListener('load', function() {
-            console.log('Adding loaded class to body');
             document.body.classList.add('loaded');
         });
+
+        window.onscroll = function() {
+            const backToTop = document.getElementById('backToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
