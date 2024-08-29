@@ -57,6 +57,7 @@ header h1, header p {
 }
 
 h1 {
+    color: #000000;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень для улучшения читаемости */
 }
 
