@@ -29,12 +29,32 @@ body.loaded {
 }
 
 header {
-    background: url('testing_background.png') no-repeat center center;
-    background-size: cover; /* Изменяет размер изображения, чтобы оно полностью покрывало заголовок */
-    color: #000000;
+    background: #35424a; /* Параметр для общего фона */
+    color: #ffffff;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Для позиционирования полупрозрачного слоя */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: 1; /* Слой ниже текста */
+}
+
+header h1, header p {
+    position: relative; /* Чтобы текст был выше затемненного слоя */
+    z-index: 2;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень для улучшения читаемости */
 }
 
 section {
