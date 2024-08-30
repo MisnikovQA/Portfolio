@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMS - Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PIS</h1>
+        <p>The PIS (Public Information System) is a sophisticated software solution designed to manage and control smart signs in real time. By leveraging APIs, PIS facilitates seamless communication with servers to retrieve, transmit, and apply crucial data, settings, and configurations, ensuring the optimal functionality and efficiency of smart urban signage.</p>
+    </header>
+
+    <section id="details">
+        <h2>Project Details</h2>
+        <p>The PIS (Public Information System) is a versatile program offering a wide range of features:</p>
+        <ul>
+            <li><strong>Real-Time Transit Information:</strong> Provides live updates on bus arrival times, bus line names, and bus numbers, keeping commuters well-informed.</li>
+            <li><strong>Environmental and System Monitoring:</strong> Integrated with sensor cards like FFSB-PIS, it monitors temperature, battery status, and solar panel performance to optimize energy usage and control cooling fans.</li>
+            <li><strong>Security and Access Management:</strong> Tracks the status of smart sign doors (open/closed) for enhanced security.</li>
+            <li><strong>Display Status Monitoring:</strong> Monitors the operational status of screens to ensure they are functioning correctly.</li>
+            <li><strong>Dynamic Lighting Control:</strong> Adjusts LED lighting based on real-time conditions for optimal visibility and energy efficiency.</li>
+            <li><strong>Audio Management:</strong> Provides control over audio settings to ensure clear communication and sound quality.</li>
+            <li><strong>Camera Access and Monitoring:</strong> Allows access to integrated cameras for real-time video monitoring and enhanced surveillance.</li>
+            <li><strong>Comprehensive System Configuration:</strong> Supports a wide range of configurations including API call intervals, software updates, system reboots, shutdown schedules, sleep modes, speaker volume adjustments, and watchdog settings.</li>
+        </ul>
+        <p>PIS is an essential tool in smart city infrastructure, enhancing public information access, optimizing resource usage, and maintaining high operational standards.</p>
+        <img src="PIS.png" alt="PIS">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Andrey Misnikov</p>
+        <button class="button-link" onclick="location.href='index.html';">Return to Portfolio</button>
+    </footer>
+
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        window.onscroll = function() {
+            const backToTop = document.getElementById('backToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
