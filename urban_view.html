@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanView - Project</title>
     <link rel="stylesheet" href="styles.css"> <!-- Проверь путь -->
+    <style>
+        .portfolio-item img {
+            width: 100%; /* Make the image width 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 400px; /* Set maximum width */
+            border: 1px solid #ddd; /* Add border */
+            border-radius: 4px; /* Rounded corners */
+            padding: 5px; /* Padding around image */
+            display: block; /* Block display for better control */
+            margin: 0 auto; /* Center align */
+        }
+        
+        .portfolio-item {
+            text-align: center; /* Center the text */
+            margin-bottom: 30px; /* Space between portfolio items */
+        }
+
+        .portfolio-item h3 {
+            margin-top: 15px; /* Space above the title */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -74,7 +95,7 @@
         <p>Examples showcasing the use of decision tables to systematically test combinations of inputs and their corresponding outputs, ensuring comprehensive coverage of complex business rules.</p>
         
         <div class="portfolio-item">
-            <img src="Screenshot2024-08-31.png" alt="QA Touch - Test Cases Screenshot"> <!-- Adjust the path if needed -->
+            <img src="images/Screenshot_2024-08-31_164003.png" alt="QA Touch - Test Cases Screenshot"> <!-- Adjust the path if needed -->
             <h3>QA Touch - Test Cases for Login and Authorization</h3>
             <p>This screenshot showcases various test cases for login functionality, including negative testing scenarios such as testing with wrong usernames, passwords, and empty fields. The priority is set to critical to ensure these functionalities work flawlessly in production.</p>
         </div>
