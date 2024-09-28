@@ -17,6 +17,43 @@
         <h2>Project Details</h2>
         <p>A detailed description of the project, its features, technologies used, and other details.</p>
         <img src="FFSB.png" alt="LASTMILE">
+
+        <h3>Testing Approach</h3>
+        <p>
+            As part of my work on the FFSB Sensor Board project, developed using STM32, I conducted both 
+            <strong>System Testing</strong> and <strong>Integration System Testing</strong> to ensure the robustness and reliability 
+            of the board's functionalities. The FFSB board controls multiple components, including LEDs, fans, sound messages, button 
+            messages, temperature and noise sensors, door buttons, and DC power for managing the PC's operational status (isLive). It 
+            communicates with the PC via a COM port, exchanging status updates and commands every minute.
+        </p>
+        
+        <h4>System Testing</h4>
+        <p>
+            I verified that the system, as a whole, met functional and non-functional requirements. This involved validating the 
+            operation of individual components—such as ensuring accurate temperature readings, noise level detection, and proper fan 
+            and LED control. Special focus was given to edge cases like simultaneous operations (e.g., triggering the door button 
+            while sending fan control commands) to confirm stability under varying load conditions.
+        </p>
+
+        <h4>Integration System Testing</h4>
+        <p>
+            I tested the seamless integration of the board with the PC, ensuring real-time communication via the COM interface. This 
+            included confirming the timely transmission of status updates and the proper execution of incoming commands. API and 
+            communication protocols were rigorously tested to ensure no data loss or miscommunication occurred during command 
+            exchange, even under high-frequency communication cycles.
+        </p>
+
+        <h4>Firmware Validation</h4>
+        <p>
+            The firmware, written in C, was designed for simplicity and ease of modification. I tested the flexibility of the code by 
+            performing iterative changes and verifying that the firmware continued to function correctly after modifications. The 
+            clear and understandable code structure allowed for efficient updates, reducing development turnaround time.
+        </p>
+
+        <p>
+            By leveraging system-level and integration testing techniques, I ensured the FFSB board’s components worked harmoniously, 
+            providing consistent performance and smooth real-time communication with the PC.
+        </p>
     </section>
 
     <footer>
