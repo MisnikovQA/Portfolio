@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>FFSB</h1>
-        <p>The FFSB (Firmware For Sensor Board) is an embedded solution developed using STM32 for controlling various components in a PIS program. It manages hardware such as LEDs, fans, sound messages, button messages, temperature sensors, noise sensors, and door buttons, all while communicating with a PC via COM port for real-time status updates and control commands.</p>
+        <p>The FFSB (Firmware For Sensor Board) is an embedded solution developed using STM32 for controlling various components in a PIS program. It manages hardware such as LEDs, fans, sound messages, button messages, temperature sensors, noise sensors, door buttons, and power management for solar panels and battery systems to ensure stable operation. The FFSB communicates with a PC via COM port for real-time status updates and control commands.</p>
     </header>
 
     <section id="details">
@@ -18,11 +18,12 @@
         <p>The FFSB Sensor Board is a versatile system offering the following features:</p>
         <ul>
             <li><strong>Real-Time Monitoring and Control:</strong> The board manages LED indicators, fans, sound messages, and other components, sending real-time status updates to the PC and receiving control commands.</li>
+            <li><strong>Solar Panel and Battery Management:</strong> Monitors and controls solar panel performance and battery status to ensure stable power supply and optimal energy efficiency for the entire system.</li>
             <li><strong>Communication Interface:</strong> Connects to the PC via COM port, exchanging data every minute to ensure up-to-date component status and timely control commands.</li>
             <li><strong>Firmware Development:</strong> The firmware, written in C, is designed to be easily modifiable, facilitating future improvements and updates.</li>
-            <li><strong>Energy Efficiency:</strong> Monitors and manages DC power for controlling the PC's operation status (isLive), ensuring optimal power usage.</li>
+            <li><strong>Energy Efficiency:</strong> Monitors and manages DC power for controlling the PC's operational status (isLive), ensuring optimal power usage.</li>
         </ul>
-        <p>The FFSB board is a core component of PIS infrastructure, enabling seamless hardware management for real-time information systems.</p>
+        <p>The FFSB board is a core component of PIS infrastructure, enabling seamless hardware management for real-time information systems and ensuring reliable operation in environments with fluctuating power availability.</p>
         <img src="FFSB.png" alt="FFSB">
     </section>
 
@@ -31,28 +32,28 @@
         <p>As a Software QA Engineer, I was responsible for testing the <strong>FFSB (Firmware For Sensor Board)</strong>, ensuring that it performs reliably and efficiently. My role in testing involved comprehensive <strong>System Testing</strong> and <strong>Integration System Testing</strong>, focusing on the interaction between various components and their communication with the PC.</p>
 
         <h3>System Testing</h3>
-        <p>I performed system-level testing to verify that all components—such as LEDs, fans, sound messages, button messages, temperature sensors, and door buttons—functioned as intended. This involved:</p>
+        <p>I performed system-level testing to verify that all components—such as LEDs, fans, sound messages, button messages, temperature sensors, door buttons, and the power management for solar panels and battery—functioned as intended. This involved:</p>
         <ul>
-            <li><strong>Functional Testing:</strong> Ensuring that each component operated according to its specifications, such as the accuracy of temperature readings, fan control, and real-time sound message playback.</li>
+            <li><strong>Functional Testing:</strong> Ensuring that each component operated according to its specifications, such as the accuracy of temperature readings, fan control, solar panel performance, and real-time monitoring of the battery status.</li>
             <li><strong>Edge Case Testing:</strong> Simulating various edge cases, like simultaneous triggering of multiple components (e.g., door button and fan control) to test system stability under high-load conditions.</li>
         </ul>
 
         <h3>Integration System Testing</h3>
         <p>During integration testing, I ensured the FFSB board's smooth communication with the PC via the COM interface. This involved:</p>
         <ul>
-            <li><strong>Real-Time Data Communication:</strong> Testing the board's ability to send status updates and receive control commands every minute without delays or data loss.</li>
-            <li><strong>API Integration:</strong> Validating that the board's firmware processed incoming commands from the PC correctly and updated the components (LEDs, fans, etc.) accordingly.</li>
+            <li><strong>Real-Time Data Communication:</strong> Testing the board's ability to send status updates (including solar panel and battery status) and receive control commands every minute without delays or data loss.</li>
+            <li><strong>API Integration:</strong> Validating that the board's firmware processed incoming commands from the PC correctly and updated the components (LEDs, fans, solar panel management, etc.) accordingly.</li>
             <li><strong>Seamless Firmware Modifications:</strong> Ensuring that the board continued to function correctly even after making iterative changes to the firmware, thanks to the clear and easily understandable code structure.</li>
         </ul>
 
         <h3>Firmware Validation</h3>
         <p>The firmware, written in C, was designed with simplicity in mind to allow easy updates and improvements. My role involved:</p>
         <ul>
-            <li><strong>Iterative Testing:</strong> After each firmware update, I performed regression tests to ensure the board maintained its stability and functionality.</li>
+            <li><strong>Iterative Testing:</strong> After each firmware update, I performed regression tests to ensure the board maintained its stability and functionality, including the accurate monitoring of solar panel efficiency and battery status.</li>
             <li><strong>Code Review:</strong> I assessed the code's structure for clarity, ensuring it was easily understandable and modifiable, facilitating future improvements and reducing development time.</li>
         </ul>
 
-        <p>Through my testing efforts, I ensured that the <strong>FFSB Sensor Board</strong> worked seamlessly within the system, providing reliable real-time updates and component control for the Public Information System.</p>
+        <p>Through my testing efforts, I ensured that the <strong>FFSB Sensor Board</strong> worked seamlessly within the system, providing reliable real-time updates and component control for the Public Information System, while ensuring stable power management through solar panel and battery control.</p>
     </section>
 
     <footer>
