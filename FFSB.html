@@ -10,50 +10,49 @@
 <body>
     <header>
         <h1>FFSB</h1>
-        <p>Firmware For Sensor Board to PIS program.</p>
+        <p>The FFSB (Firmware For Sensor Board) is an embedded solution developed using STM32 for controlling various components in a PIS program. It manages hardware such as LEDs, fans, sound messages, button messages, temperature sensors, noise sensors, and door buttons, all while communicating with a PC via COM port for real-time status updates and control commands.</p>
     </header>
 
     <section id="details">
         <h2>Project Details</h2>
-        <p>A detailed description of the project, its features, technologies used, and other details.</p>
-        <img src="FFSB.png" alt="LASTMILE">
+        <p>The FFSB Sensor Board is a versatile system offering the following features:</p>
+        <ul>
+            <li><strong>Real-Time Monitoring and Control:</strong> The board manages LED indicators, fans, sound messages, and other components, sending real-time status updates to the PC and receiving control commands.</li>
+            <li><strong>Communication Interface:</strong> Connects to the PC via COM port, exchanging data every minute to ensure up-to-date component status and timely control commands.</li>
+            <li><strong>Firmware Development:</strong> The firmware, written in C, is designed to be easily modifiable, facilitating future improvements and updates.</li>
+            <li><strong>Energy Efficiency:</strong> Monitors and manages DC power for controlling the PC's operation status (isLive), ensuring optimal power usage.</li>
+        </ul>
+        <p>The FFSB board is a core component of PIS infrastructure, enabling seamless hardware management for real-time information systems.</p>
+        <img src="FFSB.png" alt="FFSB">
+    </section>
 
-        <h3>Testing Approach</h3>
-        <p>
-            As part of my work on the FFSB Sensor Board project, developed using STM32, I conducted both 
-            <strong>System Testing</strong> and <strong>Integration System Testing</strong> to ensure the robustness and reliability 
-            of the board's functionalities. The FFSB board controls multiple components, including LEDs, fans, sound messages, button 
-            messages, temperature and noise sensors, door buttons, and DC power for managing the PC's operational status (isLive). It 
-            communicates with the PC via a COM port, exchanging status updates and commands every minute.
-        </p>
-        
-        <h4>System Testing</h4>
-        <p>
-            I verified that the system, as a whole, met functional and non-functional requirements. This involved validating the 
-            operation of individual components—such as ensuring accurate temperature readings, noise level detection, and proper fan 
-            and LED control. Special focus was given to edge cases like simultaneous operations (e.g., triggering the door button 
-            while sending fan control commands) to confirm stability under varying load conditions.
-        </p>
+    <section id="testing">
+        <h2>My Role in Testing FFSB</h2>
+        <p>As a Software QA Engineer, I was responsible for testing the <strong>FFSB (Firmware For Sensor Board)</strong>, ensuring that it performs reliably and efficiently. My role in testing involved comprehensive <strong>System Testing</strong> and <strong>Integration System Testing</strong>, focusing on the interaction between various components and their communication with the PC.</p>
 
-        <h4>Integration System Testing</h4>
-        <p>
-            I tested the seamless integration of the board with the PC, ensuring real-time communication via the COM interface. This 
-            included confirming the timely transmission of status updates and the proper execution of incoming commands. API and 
-            communication protocols were rigorously tested to ensure no data loss or miscommunication occurred during command 
-            exchange, even under high-frequency communication cycles.
-        </p>
+        <h3>System Testing</h3>
+        <p>I performed system-level testing to verify that all components—such as LEDs, fans, sound messages, button messages, temperature sensors, and door buttons—functioned as intended. This involved:</p>
+        <ul>
+            <li><strong>Functional Testing:</strong> Ensuring that each component operated according to its specifications, such as the accuracy of temperature readings, fan control, and real-time sound message playback.</li>
+            <li><strong>Edge Case Testing:</strong> Simulating various edge cases, like simultaneous triggering of multiple components (e.g., door button and fan control) to test system stability under high-load conditions.</li>
+        </ul>
 
-        <h4>Firmware Validation</h4>
-        <p>
-            The firmware, written in C, was designed for simplicity and ease of modification. I tested the flexibility of the code by 
-            performing iterative changes and verifying that the firmware continued to function correctly after modifications. The 
-            clear and understandable code structure allowed for efficient updates, reducing development turnaround time.
-        </p>
+        <h3>Integration System Testing</h3>
+        <p>During integration testing, I ensured the FFSB board's smooth communication with the PC via the COM interface. This involved:</p>
+        <ul>
+            <li><strong>Real-Time Data Communication:</strong> Testing the board's ability to send status updates and receive control commands every minute without delays or data loss.</li>
+            <li><strong>API Integration:</strong> Validating that the board's firmware processed incoming commands from the PC correctly and updated the components (LEDs, fans, etc.) accordingly.</li>
+            <li><strong>Seamless Firmware Modifications:</strong> Ensuring that the board continued to function correctly even after making iterative changes to the firmware, thanks to the clear and easily understandable code structure.</li>
+        </ul>
 
-        <p>
-            By leveraging system-level and integration testing techniques, I ensured the FFSB board’s components worked harmoniously, 
-            providing consistent performance and smooth real-time communication with the PC.
-        </p>
+        <h3>Firmware Validation</h3>
+        <p>The firmware, written in C, was designed with simplicity in mind to allow easy updates and improvements. My role involved:</p>
+        <ul>
+            <li><strong>Iterative Testing:</strong> After each firmware update, I performed regression tests to ensure the board maintained its stability and functionality.</li>
+            <li><strong>Code Review:</strong> I assessed the code's structure for clarity, ensuring it was easily understandable and modifiable, facilitating future improvements and reducing development time.</li>
+        </ul>
+
+        <p>Through my testing efforts, I ensured that the <strong>FFSB Sensor Board</strong> worked seamlessly within the system, providing reliable real-time updates and component control for the Public Information System.</p>
     </section>
 
     <footer>
